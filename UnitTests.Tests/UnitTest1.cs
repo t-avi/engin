@@ -10,11 +10,11 @@ namespace UnitTests.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            var quad = new QuadEq();
+            var quad = new QuadEq(); //объявляем
 
-            var list = quad.ResultPlease(1, 3, -4);
+            var list = quad.ResultPlease(1, 3, -4); //делаем
 
-            Assert.AreEqual(2, list.Count);
+            Assert.AreEqual(2, list.Count); //проверям
         }
 
         [TestMethod]
