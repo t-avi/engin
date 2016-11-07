@@ -23,7 +23,7 @@ namespace UnitTests
             x2 = (-b - Descr(a, b, c)) / 2 * a;
 
             Result.Add(x1);
-            Result.Add(x2);
+            if (x1 != x2) Result.Add(x2);
 
             return Result;
         }

@@ -8,7 +8,7 @@ namespace UnitTests.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CountTest()
         {
             var quad = new QuadEq(); //объявляем
 
@@ -18,7 +18,7 @@ namespace UnitTests.Tests
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void ResultTest()
         {
             var quad = new QuadEq();
 
@@ -29,11 +29,11 @@ namespace UnitTests.Tests
         }
 
         [TestMethod]
-        public void TestMethod3()
+        public void EqualCountTest()
         {
             var quad = new QuadEq();
 
-            var list = quad.ResultPlease(3, -18, 27);
+            var list = quad.ResultPlease(3, -18, 27); //одинаковые корни
 
             Assert.AreEqual(1, list.Count);
         }
